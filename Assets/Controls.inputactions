@@ -18,18 +18,7 @@
                 {
                     "name": "",
                     "id": "6e58597e-52ad-411a-b1bc-04ad3a898dc4",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "Jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "21f67566-2aa8-4912-91e2-433606c527b3",
-                    "path": "<Mouse>/rightButton",
+                    "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
