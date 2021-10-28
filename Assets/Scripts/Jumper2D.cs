@@ -2,7 +2,9 @@ using UnityEngine;
 
 public class Jumper2D : MonoBehaviour
 {
+    [Header("Jump")]
     public float jumpForce;
+    [Header("Ground Detection")]
     [Range(0,1)]public float groundCheckRadius;
     public LayerMask mask;
     public Transform feet;
@@ -24,7 +26,6 @@ public class Jumper2D : MonoBehaviour
     private void Update()
     {
         var test = Physics2D.OverlapCircle(feet.position, groundCheckRadius, mask);
-        Debug.Log(test);
         isGrounded = test != null;
     }
 }
