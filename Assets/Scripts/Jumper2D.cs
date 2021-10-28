@@ -2,15 +2,16 @@ using UnityEngine;
 
 public class Jumper2D : MonoBehaviour
 {
-    [Header("Jump")]
-    public float jumpForce;
-    [Header("Ground Detection")]
-    [Range(0,1)]public float groundCheckRadius;
+    [Header("Jump")] public float jumpForce;
+
+    [Header("Ground Detection")] [Range(0, 1)]
+    public float groundCheckRadius;
+
     public LayerMask mask;
     public Transform feet;
+    [HideInInspector] public bool isGrounded;
 
     private Rigidbody2D rb2D;
-    private bool isGrounded;
 
     private void Awake()
     {
