@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerAnimatorController : MonoBehaviour
 {
@@ -18,5 +19,11 @@ public class PlayerAnimatorController : MonoBehaviour
     {
         animator.SetBool("IsJumping", !jumper2D.isGrounded);
         animator.SetFloat("Speed", Mathf.Abs(rb2D.velocity.x));
+    }
+
+    public void OnAttack(InputAction.CallbackContext obj)
+    {
+        if(!obj.performed || !jumper2D.isGrounded) return;
+        animator.SetTrigger("Attack");
     }
 }

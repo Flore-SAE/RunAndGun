@@ -12,7 +12,7 @@ public class ConstantMove2D : MonoBehaviour
         rb2D = GetComponent<Rigidbody2D>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         rb2D.velocity = direction.normalized * speed;
     }

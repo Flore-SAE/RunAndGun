@@ -13,8 +13,10 @@ GameObject:
   - component: {fileID: 3125823630544477658}
   - component: {fileID: 1059924820921596340}
   - component: {fileID: 7288372684129476580}
-  m_Layer: 6
-  m_Name: Bullet
+  - component: {fileID: -5680591462171170334}
+  - component: {fileID: -2158944760680145327}
+  m_Layer: 10
+  m_Name: BaseBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,6 +47,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -73,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 12
   m_Sprite: {fileID: 21300000, guid: dbfb6d550c5fe664e9afbae62a3681a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -136,3 +139,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: {x: 0, y: 0}
   speed: 5
+--- !u!114 &-5680591462171170334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7009118758478666553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8173d7efe982cb49a6a268bf326e569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 1
+  startingHealth: 1
+  currentHealth: 0
+--- !u!114 &-2158944760680145327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7009118758478666553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7355bffc7807a14b90b1fc88fd7a144, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageLayers:
+    serializedVersion: 2
+    m_Bits: 512

@@ -19,6 +19,8 @@ public class SpriteFlipper : MonoBehaviour
             return;
         var value = ctx.ReadValue<float>();
         isFacingLeft = value < 0;
-        spriteRenderer.flipX = isFacingLeft;
+        var xScale = isFacingLeft ? -1 : 1;
+        var newScale = new Vector3(xScale, 1, 1);
+        transform.localScale = newScale;
     }
 }

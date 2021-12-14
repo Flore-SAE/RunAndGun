@@ -14,10 +14,10 @@ TagManager:
   - NoCollision
   - Player
   - Platforms
-  - 
-  - 
-  - 
-  - 
+  - Enemy
+  - PlayerBullet
+  - EnemyBullet
+  - PlayerAxe
   - 
   - 
   - 
